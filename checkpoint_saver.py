@@ -55,6 +55,8 @@ class ReturnalGame:
         else:
             print('error, no se pudo loadear')
 
+   
+
 class ReturnalApp:
     def __init__(self, returnal_game):
         self.returnal_game = returnal_game
@@ -82,6 +84,7 @@ class ReturnalApp:
     def save_game(self):
         current_saved_time = self.returnal_game.check_current_saved()
         message = self.returnal_game.save_current_game(current_saved_time)
+        self.refresh_saved_games_list()
         self.output_text.insert(tk.END, f"{message}\n")
         
     def load_game(self):
@@ -98,8 +101,16 @@ class ReturnalApp:
     def exit_app(self):
         self.window.destroy()
 
+    def refresh_saved_games_list(self):    
+        self.backup_listbox.delete(0, tk.END)       
+        self.backup_folders = os.listdir(self.returnal_game.backup_folder)      
+        for folder_name in self.backup_folders:
+            self.backup_listbox.insert(tk.END, folder_name)
+
     def run(self):
         self.window.mainloop()
+
+    
 
         
 if __name__ == '__main__':
