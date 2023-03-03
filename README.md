@@ -23,7 +23,7 @@ The application has three buttons:
 
     Save Checkpoint: Saves the current game checkpoint and refreshes the list of saved checkpoints.
     Restore Checkpoint: Loads a saved checkpoint.
-    Exit...: Exits the application.
+    Exit: Exits the application.
 
 The saved checkpoints are displayed in a listbox. To load a saved checkpoint, select it from the listbox and click the "Restore Checkpoint" button.
 Disclaimer
