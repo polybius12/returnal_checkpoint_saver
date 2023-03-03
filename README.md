@@ -1,4 +1,4 @@
-Returnal Checkpoint Saver
+#Returnal Checkpoint Saver
 
 This is a simple Python application that provides a graphical user interface for the Returnal game checkpoint saver. It allows the user to save the current game checkpoint and load a saved checkpoint.
 
