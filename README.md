@@ -8,7 +8,7 @@ Requirements
     Python 3.x
     tkinter
 
-Usage
+### Usage
 
 To use the Returnal Checkpoint Saver:
 
@@ -17,7 +17,7 @@ To use the Returnal Checkpoint Saver:
     Run the command python checkpoint_saver.py.
     The graphical user interface will open.
 
-Functionality
+### Functionality
 
 The application has three buttons:
 
@@ -26,7 +26,8 @@ The application has three buttons:
     Exit: Exits the application.
 
 The saved checkpoints are displayed in a listbox. To load a saved checkpoint, select it from the listbox and click the "Restore Checkpoint" button.
-Disclaimer
+
+### Disclaimer
 
 This application is not affiliated with or endorsed by the developers of the Returnal game. Use at your own risk.
 License
